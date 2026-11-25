@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #171329;
+    font-family: 'Montserrat', sans-serif;
+    color: #C7C1D6;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.topo{
+    margin: 0;
+    text-align:center;
+}
+
+.topo p{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color: #C7C1D6;
+    font-size: 35px;
+}
+
+.topo figure{
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwads;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0
+    }to {
+        opacity: 1
+    }
+}
+
