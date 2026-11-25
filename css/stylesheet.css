@@ -21,13 +21,38 @@ h1 {
 .topo p{
     margin-top: 10px;
     margin-bottom: 7px;
-    color: #C7C1D6;
+    color: #FF4FA3;
     font-size: 35px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
 }
 
 .topo figure{
     opacity: 0;
-    animation: fadeIn 0.8s ease-out forwads;
+    animation: fadeIn 3s ease-out forwards;
+}
+
+.banner-imagem{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.banner-imagem img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner-imagem::after{
+    content: "";
+    position: absolute;
+    inset: 55% 0 0 0;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 35%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%);
+    pointer-events: none;
 }
 
 @keyframes fadeIn{
