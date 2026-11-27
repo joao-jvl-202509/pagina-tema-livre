@@ -11,6 +11,7 @@ body{
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
+    color: #FF4FA3;
 }
 
 .topo{
@@ -107,3 +108,32 @@ h1 {
     }
 }
 
+
+.historia-container h1{
+    margin: 35px;
+    font-size: 100px;
+    border-bottom: 2px solid white;
+}
+
+.texto-container{
+    margin:35px;
+    width: 1500px;
+    height: auto;
+}
+
+.texto-container p{
+    text-align:justify;
+    font-size: 30px;
+}
+
+.historia-imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.historia-imagem img{
+    margin: 35px;
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+}
