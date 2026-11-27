@@ -15,7 +15,27 @@ h1 {
 
 .topo{
     margin: 0;
-    text-align:center;
+    text-align: center;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container figure {
+    margin: 0;
+}
+
+.container figure img {
+    width: 500px;
+    height: auto;
 }
 
 .topo p{
@@ -27,18 +47,9 @@ h1 {
     animation: fadeIn 1s ease-out forwards;
 }
 
-.topo figure{
+.container figure{
     opacity: 0;
     animation: fadeIn 3s ease-out forwards;
-}
-
-.container{
-    display: block;
-    position: relative;
-    width: 100%;
-    background-color: #171329;
-    text-align: center;
-    padding-top: 10px;
 }
 
 .banner-imagem{
@@ -58,11 +69,33 @@ h1 {
 .banner-imagem::after{
     content: "";
     position: absolute;
-    inset: 55% 0 0 0;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 35%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%);
+    inset: 35% 0 0 0;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(23, 19, 41, 0.15) 35%,
+        rgba(23, 19, 41, 0.65) 75%,
+        #171329 100%
+    );
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 45%,
+        black 100%
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 45%,
+        black 100%
+    );
+
     pointer-events: none;
 }
 
