@@ -108,10 +108,9 @@ h1 {
     }
 }
 
-
 .historia-container h1{
     margin: 35px;
-    font-size: 100px;
+    font-size: 80px;
     border-bottom: 2px solid white;
 }
 
@@ -128,12 +127,29 @@ h1 {
 
 .historia-imagem{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia-imagem figcaption{
+    text-align: center;
+    margin-top: 10px;
 }
 
 .historia-imagem img{
-    margin: 35px;
+    margin: 0px;
     width: 800px;
     height: auto;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.historia-imagem:hover img{
+    transform: scale(1.1);
+}
+
+.titulo-personagens h1{
+    margin: 35px;
+    font-size: 80px;
+    border-bottom: 2px solid white;
 }
